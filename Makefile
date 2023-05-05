@@ -1,7 +1,7 @@
-STACK_NAME=slsjava-springboot-wa-ecr
+STACK_NAME=slsjava-springboot-ni-wa-ecr
 
-build-local:
-	./mvnw clean package
+build-native-image:
+	./mvnw -Pnative native:compile
 
 sam-build:
 	aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws

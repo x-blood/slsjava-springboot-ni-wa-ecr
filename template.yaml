@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: >
-  Serverless Java17 Spring Boot Web Adapter Container Example
+  Serverless Java17 Spring Boot Native Image Web Adapter Container Example
 
 Globals:
   Function:
@@ -34,7 +34,7 @@ Resources:
             Path: /v1/{proxy+}
             Method: ANY
     Metadata:
-      DockerTag: slsjava-springboot-wa-ecr
+      DockerTag: slsjava-springboot-ni-wa-ecr
       DockerContext: ./
       Dockerfile: Dockerfile
 

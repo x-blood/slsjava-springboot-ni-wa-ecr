@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>slsjava-springboot-wa-ecr</artifactId>
+	<artifactId>slsjava-springboot-ni-wa-ecr</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>slsjava-springboot-wa-ecr</name>
-	<description>slsjava-springboot-wa-ecr</description>
+	<name>slsjava-springboot-ni-wa-ecr</name>
+	<description>slsjava-springboot-ni-wa-ecr</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -34,6 +34,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.graalvm.buildtools</groupId>
+				<artifactId>native-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
