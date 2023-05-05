@@ -54,12 +54,12 @@ default ✓ [======================================] 200 VUs  1s
 query-string:
 ```
 filter @type="REPORT" and ispresent(@initDuration)
-| stats count() as coldStarts, avg(@initDuration), min(@initDuration), max(@initDuration) by bin(10m)
+| stats count() as coldStarts, avg(@maxMemoryUsed), avg(@duration), avg(@initDuration), min(@initDuration), max(@initDuration) by bin(10m)
 ```
 ---
-| coldStarts | avg(@initDuration) | min(@initDuration) | max(@initDuration) |
-|------------|--------------------|--------------------|--------------------|
-| 161        | 414.4176           | 216.84             | 776.54             |
+| coldStarts | avg(@maxMemoryUsed) | avg(@duration) | avg(@initDuration) | min(@initDuration) | max(@initDuration) |
+|------------|---------------------|----------------|--------------------|--------------------|--------------------|
+| 161        | 99000000            | 3.2762         | 414.4176           | 216.84             | 776.54             |
 ---
 
 ## Getting Started
