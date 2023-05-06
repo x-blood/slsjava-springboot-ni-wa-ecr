@@ -2,13 +2,14 @@
 
 **Convert Spring Boot 3 to Native Image with GraalVM and launch with AWS Lambda Web Adapter**
 
-| -                           | -                              |
-|:----------------------------|--------------------------------|
-| Java                        | Java17                         |
-| Application Framework       | Spring Boot 3.0.6              |
-| Deploy Framework            | AWS SAM CLI 1.82.0             |
-| Development environment     | Ubuntu Desktop 20.04           |
-| Container build environment | Docker Desktop on Linux 4.17.0 |
+| -                       | -                                                 |
+|:------------------------|---------------------------------------------------|
+| Java                    | Java17                                            |
+| Application Framework   | Spring Boot 3.0.6                                 |
+| Deploy Framework        | AWS SAM CLI 1.82.0                                |
+| Development environment | Ubuntu Desktop 20.04                              |
+| » JDK for local build   | GraalVM CE 22.3.2 (build 17.0.7+7-jvmci-22.3-b18) |
+| » Container build       | Docker Desktop on Linux 4.17.0                    |
 
 ## Result of K6
 
